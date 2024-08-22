@@ -1,10 +1,10 @@
 window.addEventListener('load', () => {
-    
-    const vm = new Vue({
-        el: '#app',
-        data: {
-            mensaje:'Hola init!'
-        }
-
-    })
+    const { createApp } = Vue;
+    createApp({
+      data() {
+        return {
+          mensaje: 'Hola init!'
+        };
+      }
+    }).mount('#app');
   });
